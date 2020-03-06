@@ -1,0 +1,17 @@
+;
+; BIND data file for tamales
+;
+$TTL	172800
+@	IN	SOA	ns2.tamales.occ.ues.edu.sv. rm15056.ues.edu.sv (
+			      1		; Serial
+			 172800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 1d )	; Negative Cache TTL
+;
+@	IN	NS	ns2.tamales.occ.ues.edu.sv.
+ns1	IN	A	10.192.6.3
+www	IN	A	10.192.6.6
+www	IN	AAAA	2001:db8:6::6
+ww	IN	CNAME	www
+wwww	IN	CNAME	www
