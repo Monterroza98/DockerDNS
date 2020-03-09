@@ -1,0 +1,15 @@
+
+$TTL	604800
+@	IN	SOA	ns2.nuegado2.occ.ues.edu.sv. dmmaga.occ.ues.edu.sv. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@   IN  NS  ns2.nuegado2.occ.ues.edu.sv.
+
+3.20	IN	PTR	ns2.nuegado2.occ.ues.edu.sv.
+3.21	IN	PTR	www.nuegado2.occ.ues.edu.sv.
+3.22  IN  PTR recetas.nuegado2.occ.ues.edu.sv.
+3.23  IN  PTR fotos.nuegado2.occ.ues.edu.sv.

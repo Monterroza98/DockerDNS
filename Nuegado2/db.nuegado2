@@ -1,0 +1,15 @@
+
+$TTL	604800
+@	IN	SOA	ns2.nuegado2.occ.ues.edu.sv. dmmaga.occ.ues.edu.sv. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns2.nuegado2.occ.ues.edu.sv.
+ns1	IN	A	10.192.3.20
+www IN  A   10.192.3.21
+ww  IN  CNAME   www
+recetas IN  A   10.192.3.22
+fotos   IN  A   10.192.3.23

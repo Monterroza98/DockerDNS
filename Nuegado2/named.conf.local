@@ -1,0 +1,30 @@
+zone "nuegado.occ.ues.edu.sv" {
+	type master;
+	file "/etc/bind/db.nuegado";
+	notify yes;
+    also-notify { $IP_NUEGADO; };
+	allow-transfer { $IP_NUEGADO; };
+};
+
+zone "3.192.10.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.10_192_3";
+	notify yes;
+    also-notify { $IP_NUEGADO; };
+	allow-transfer { $IP_NUEGADO; };
+};
+
+zone "nuegado2.occ.ues.edu.sv" {
+	type slave;
+	masters{ $IP_NUEGADO; };
+	file "/var/cache/bind/db.nuegado2";
+};
+
+zone "192.10.in-addr.arpa" {
+	type slave;
+	masters{ $IP_NUEGADO; };
+	file "/var/cache/bind/db.10_192";
+};
+
+
+
